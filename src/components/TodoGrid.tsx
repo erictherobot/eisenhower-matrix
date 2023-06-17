@@ -36,7 +36,7 @@ const TodoGrid = ({ todos, onDeleteTodo, onEditTodo }: TodoGridProps) => {
 
   return (
     <DragDropContext onDragEnd={handleDragEnd}>
-      <div className="grid grid-cols-2 gap-4 my-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
         {quadrants.map((quadrant, quadrantIndex) => {
           const quadrantTodos = todos.filter(
             (todo) => todo.quadrant === quadrant
