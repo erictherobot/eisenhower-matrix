@@ -60,6 +60,10 @@ const TodoPage = () => {
         tasks you&apos;ll delete.
       </p>
       <AddTodoForm onAddTodo={handleAddTodo} />
+      <p className="text-xs mt-4">
+        You can drag and drop items below to reorder
+      </p>
+
       <TodoGrid
         todos={todos}
         onDeleteTodo={handleDeleteTodo}
