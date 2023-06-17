@@ -25,3 +25,7 @@ You can reorder the tasks by dragging and dropping them into the desired positio
 - Tailwindcss
 - React Beautiful Dnd
 - Localstorage
+
+## License
+
+MIT
