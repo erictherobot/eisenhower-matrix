@@ -35,6 +35,7 @@ const TodoGrid = ({ todos, onDeleteTodo, onEditTodo }: TodoGridProps) => {
   };
 
   return (
+    // @ts-ignore
     <DragDropContext onDragEnd={handleDragEnd}>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
         {quadrants.map((quadrant, quadrantIndex) => {
