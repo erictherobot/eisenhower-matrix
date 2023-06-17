@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+
+  background-color: rgb(229, 229, 229);
+  background-image: radial-gradient(
+      at 17% 3%,
+      rgb(224, 242, 254) 0,
+      transparent 62%
+    ),
+    radial-gradient(at 90% 48%, rgb(67, 56, 202) 0, transparent 97%),
+    radial-gradient(at 70% 51%, rgb(214, 211, 209) 0, transparent 59%),
+    radial-gradient(at 28% 40%, rgb(157, 23, 77) 0, transparent 8%),
+    radial-gradient(at 64% 71%, rgb(236, 72, 153) 0, transparent 57%),
+    radial-gradient(at 32% 3%, rgb(249, 115, 22) 0, transparent 77%);
+
+  background-attachment: fixed;
+}
