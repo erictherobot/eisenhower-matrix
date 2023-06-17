@@ -61,7 +61,8 @@ const TodoPage = () => {
       </p>
       <AddTodoForm onAddTodo={handleAddTodo} />
       <p className="text-xs mt-4">
-        You can drag and drop items below to reorder
+        You can drag and drop items below to reorder. This app uses Local
+        Storage to persist data.
       </p>
 
       <TodoGrid
