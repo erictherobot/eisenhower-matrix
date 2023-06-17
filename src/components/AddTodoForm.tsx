@@ -34,7 +34,9 @@ const AddTodoForm = ({ onAddTodo }: AddTodoFormProps) => {
         <option value="Delegate">Delegate</option>
         <option value="Delete">Delete</option>
       </select>
-      <button className="bg-black text-white p-2 rounded ml-2">Add Todo</button>
+      <button className="bg-black text-white p-2 px-4 rounded ml-2">
+        Add Todo
+      </button>
     </form>
   );
 };
