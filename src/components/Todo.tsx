@@ -54,7 +54,7 @@ const Todo = ({ todo, onTodoDelete, onTodoEdit }: TodoProps) => {
         <div className="flex justify-between">
           <h3 className="font-bold">{todo.title}</h3>
           <div>
-            <button className="text-blue-500 mr-2" onClick={handleEditClick}>
+            <button className="text-black mr-2" onClick={handleEditClick}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -73,7 +73,11 @@ const Todo = ({ todo, onTodoDelete, onTodoEdit }: TodoProps) => {
             <button
               className="text-red-500"
               onClick={() => {
-                onTodoDelete(todo.id);
+                if (
+                  window.confirm("Are you sure you want to delete this task?")
+                ) {
+                  onTodoDelete(todo.id);
+                }
               }}
             >
               <svg
